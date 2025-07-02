@@ -1,57 +1,46 @@
-// MainPage.vue
 <template>
   <div class="main">
     <ThreeBackground />
-    <!-- 🍰 Header -->
     <div class="header">
-      <!-- Left: Social Icons -->
       <div class="socials">
-        <a href="https://facebook.com"><img src="/images/face.png" />facebook</a>
-        <a href="https://instagram.com"><img src="/images/insta.png" />instagram</a>
-        <a href="https://twitter.com"><img src="/images/twitter.png" />twitter</a>
+        <a href="https://t.me/" target="_blank"><img src="/images/telegram.png" />Telegram</a>
+        <a href="https://instagram.com" target="_blank"><img src="/images/insta.png" />Instagram</a>
+        <a href="https://twitter.com" target="_blank"><img src="/images/twitter.png" />Twitter</a>
       </div>
+      <div class="logo">🎂 <span>Sprinkle Bakery</span></div>
 
-      <!-- Center: Logo -->
-      <div class="logo">🎂 <span>Bakery</span></div>
-
-      <!-- Right: Navbar -->
-      <ul class="nav-links">
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/menu">Menu</router-link></li>
-        <li><router-link to="/about">About</router-link></li>
-        <li><router-link to="/contact">Contact</router-link></li>
-      </ul>
+      <div class="search-bar">
+        <img src="/images/iconsbar.png" class="search-icon" />
+        <input type="text" v-model="searchQuery" placeholder="Search..." />
+      </div>
     </div>
 
-    <!-- 🔍 Search Bar -->
-    <div class="search-bar">
-      <img src="/images/iconsbar.png" class="search-icon" />
-      <input type="text" v-model="searchQuery" placeholder="Search..." />
-    </div>
 
-    <!-- 🧁 Product Grid -->
     <h2 class="section-title">Our Delicious Creations 🍩</h2>
     <div class="grid-container">
       <div v-for="item in filteredItems" :key="item.name" class="product-card">
         <img :src="item.image" :alt="item.name" />
         <h3>{{ item.name }}</h3>
+        <p class="description">{{ item.description }}</p>
+        <p class="price">₹{{ item.price }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import product from '@/data/product.json';
 import ThreeBackground from './ThreeBackground.vue';
+import product from '@/data/product.json';
 
 export default {
+  name: 'MainPage',
   components: {
     ThreeBackground
   },
   data() {
     return {
       searchQuery: '',
-      items: product,
+      items: product
     };
   },
   computed: {
@@ -59,8 +48,8 @@ export default {
       return this.items.filter(item =>
         item.name.toLowerCase().includes(this.searchQuery.toLowerCase())
       );
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -71,7 +60,7 @@ export default {
   min-height: 100vh;
   font-family: 'Segoe UI', sans-serif;
   position: relative;
-  overflow: hidden;
+  z-index: 1;
 }
 
 .header {
@@ -82,6 +71,20 @@ export default {
   padding: 15px 30px;
   border-bottom: 2px solid #f8cdd9;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  color: #c71585;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .socials {
@@ -105,40 +108,14 @@ export default {
   height: 18px;
 }
 
-.logo {
-  font-size: 28px;
-  font-weight: bold;
-  font-family: 'Georgia', serif;
-  color: #c71585;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 25px;
-  list-style: none;
-}
-.nav-links a {
-  text-decoration: none;
-  color: #c71585;
-  font-weight: 600;
-  font-size: 16px;
-}
-.nav-links a:hover {
-  color: #ff69b4;
-}
-
 .search-bar {
   display: flex;
   align-items: center;
-  margin: 20px auto;
-  max-width: 300px;
   background: #fff0f6;
   padding: 6px 12px;
   border: 1px solid #f8cdd9;
   border-radius: 20px;
+  min-width: 200px;
 }
 .search-icon {
   width: 20px;
@@ -160,6 +137,7 @@ input[type='text'] {
   font-weight: bold;
   margin: 20px 0;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -184,6 +162,16 @@ input[type='text'] {
   color: #d63384;
   margin-top: 8px;
 }
+.product-card .description {
+  font-size: 14px;
+  color: #7b4a3b;
+  margin-top: 5px;
+}
+.product-card .price {
+  font-weight: bold;
+  color: #b85c38;
+  margin-top: 8px;
+}
 
 @media (max-width: 768px) {
   .header {
@@ -191,7 +179,14 @@ input[type='text'] {
     align-items: center;
     text-align: center;
   }
-  .nav-links {
+
+  .logo {
+    position: static;
+    transform: none;
+    margin: 10px 0;
+  }
+
+  .search-bar {
     margin-top: 10px;
   }
 }

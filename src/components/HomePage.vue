@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <!-- Hero Banner -->
+
     <section class="hero">
       <div class="hero-content">
         <h1>Welcome to Sprinkle Bakery</h1>
@@ -9,7 +9,6 @@
       </div>
     </section>
 
-    <!-- Featured Products -->
     <section class="featured">
       <h2>Best Sellers 🧁</h2>
       <div class="products">
@@ -28,7 +27,7 @@ import product from '@/data/product.json';
 export default {
   data() {
     return {
-      featuredItems: product.slice(0, 4), // first 4 items as highlights
+      featuredItems: product.slice(0, 4), 
     };
   },
 };
@@ -42,7 +41,7 @@ export default {
   min-height: 100vh;
 }
 
-/* 🎀 Hero Section */
+
 .hero {
   background: url('/public/images/bakery3.avif');
   background-size: cover;
@@ -75,7 +74,7 @@ export default {
   font-weight: bold;
 }
 
-/* 🧁 Featured Section */
+
 .featured {
   padding: 40px 20px;
   text-align: center;
