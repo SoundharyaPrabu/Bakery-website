@@ -1,0 +1,233 @@
+[
+  {
+    "name": "Croissant-Basic",
+    "description": "Crispy croissant - fresh and new.",
+    "image": "/images/croissant1.avif",
+    "category":"croissant"
+  },
+    {
+    "name": "Croissant-sweet",
+    "description": "Rich and over stuffed taste.",
+    "image": "/images/croissant2.avif",
+    "category":"croissant"
+  },
+    {
+    "name": "Croissant-chocofilled",
+    "description": "Rich and creamy chocolate delight.",
+    "image": "/images/croissant3.webp",
+    "category":"croissant"
+  },
+    {
+    "name": "Croissant-Almond",
+    "description": "Rich and creamy chocolate with almond delight.",
+    "image": "/images/croissant4.webp",
+    "category":"croissant"
+  },
+    {
+    "name": "Croissant-cheesy fills",
+    "description": "Rich and creamy cheesy delight.",
+    "image": "/images/croissant5.webp",
+    "category":"croissant"
+  },
+    {
+    "name": "Croissant-sandwitch",
+    "description": "veg stuff with cream myonnus.",
+    "image": "/images/croissant6.avif",
+    "category":"croissant"
+  },
+    {
+    "name": "Croissant-Choco dipped",
+    "description": "Rich and creamy chocolate delight.",
+    "image": "/images/croissant7.avif",
+    "category":"croissant"
+  },
+    {
+    "name": "Croissant-Swirreled",
+    "description": "Rich and creamy chocolate delight.",
+    "image": "/images/croissant8.avif",
+    "category":"croissant"
+  },
+  {
+    "name": "Doughnut - topings",
+    "description": "Pinky sweet topings filled.",
+    "image": "/images/doughnut1.jpg",
+    "category":"doughnuts"
+  },
+  {
+    "name": "Doughnut - variety",
+    "description": "Colorful and sweet treats.",
+    "image": "/images/doughnut7.jpg",
+    "category":"doughnuts"
+  },
+  {
+    "name": "Doughnut - toppings filled",
+    "description": "Elegant and delicate French doughnuts.",
+    "image": "/images/doughnut8.avif",
+    "category":"doughnuts"
+  },
+  {
+    "name": "Doughnut - all combo",
+    "description": "American style doughnut all flavour",
+    "image": "/images/doughnut2.jpg",
+    "category":"doughnuts"
+  },
+  {
+    "name": "Doughnut - coloufull",
+    "description": "colour full visual and taste treat",
+    "image": "/images/doughnut3.jpg",
+    "category":"doughnuts"
+  },
+  {
+    "name": "cookies - almond",
+    "description": "Elegant and delicate French cookies.",
+    "image": "/images/cookies.avif",
+    "category":"cookies"
+  },
+  {
+    "name": "cookies - dryfriuts",
+    "description": "Elegant and delicate French nuts cookies.",
+    "image": "/images/cookies2.avif",
+    "category":"cookies"
+  },
+  {
+    "name": "cookies - choco",
+    "description": "Choco filled cookies.",
+    "image": "/images/cookies3.avif",
+    "category":"cookies"
+  },
+  {
+    "name": "cookies - nuts",
+    "description": "dry nuts filled choco free cookies",
+    "image": "/images/cookies4.avif",
+    "category":"cookies"
+  },
+  {
+    "name": "cookie - choco",
+    "description": "Elegant and delicate French cookies.",
+    "image": "/images/cookies5.avif",
+    "category":"cookies"
+  },
+  {
+    "name": "cookie - jimjam",
+    "description": "Jim Jam flavour cookie",
+    "image": "/images/cookies6.avif",
+    "category":"cookies"
+  },
+  {
+    "name": "Cookie - combo",
+    "description": "All combo cookie.",
+    "image": "/images/cookies7.avif",
+    "category":"cookies"
+  },
+  {
+    "name": "cookie - toppings",
+    "description": "cookies with gems flavour.",
+    "image": "/images/cookies8.avif",
+    "category":"cookies"
+  },
+  {
+    "name": "cookie - drynuts",
+    "description": "delicate French cookies.",
+    "image": "/images/cookies2.avif",
+    "category":"cookies"
+  },
+  {
+    "name": "waffels - (Honey - pie)",
+    "description": "delicate honey waffels.",
+    "image": "/images/waffels1.webp",
+    "category":"waffels"
+  },
+  {
+    "name": "waffels -(oreo - creamy)",
+    "description": "delicate orey waffels.",
+    "image": "/images/waffels2.avif",
+    "category":"waffels"
+  },
+  {
+    "name": "waffels - fresh fruit.",
+    "description": "freah strawberry banana honey combo.",
+    "image": "/images/waffels3.avif",
+    "category":"waffels"
+  },
+  {
+    "name": "waffels - cookie",
+    "description": "cookie with waffels.",
+    "image": "/images/waffels4.jpg",
+    "category":"waffels"
+  },
+  {
+    "name": "waffels creamy",
+    "description": "crispy waffels and creamy",
+    "image": "/images/waffels5.avif",
+    "category":"waffels"
+  },
+  {
+    "name": "cookies - rose creamy",
+    "description": "delisious creamy fruity.",
+    "image": "/images/waffels6.webp",
+    "category":"waffels"
+  },
+  {
+    "name": "waffels - pancake",
+    "description": "Pancake with waffels.",
+    "image": "/images/waffels7.webp",
+    "category":"waffels"
+  },
+  {
+    "name": "waffels honey blend",
+    "description": "delicate Honey blend.",
+    "image": "/images/waffels8.webp",
+    "category":"waffels"
+  },
+  {
+    "name": "jarcake - choco",
+    "description": "jar cake with creamy texture",
+    "image": "/images/jarcake.avif",
+    "category":"jarcake"
+  },
+  {
+    "name": "jarcake - combo",
+    "description": "delicate westside jarcake.",
+    "image": "/images/jarcake2.webp",
+    "category":"jarcake"
+  },
+   {
+    "name": "jarcake - choco filled",
+    "description": "delisious choco filled.",
+    "image": "/images/jarcake3.webp",
+    "category":"jarcake"
+  },
+   {
+    "name": "jarcake - fruits flavoured",
+    "description": "fruits flavoured jar cake.",
+    "image": "/images/jarcake4.webp",
+    "category":"jarcake"
+  },
+   {
+    "name": "jarcake red-velvet",
+    "description": "delicate French cookies.",
+    "image": "/images/jarcake5.jpg",
+    "category":"jarcake"
+  },
+   {
+    "name": "jarcake - toppings ",
+    "description": "Toppings filled jar cake.",
+    "image": "/images/jarcake6.jpg",
+    "category":"jarcake"
+  },
+   {
+    "name": "jarcake combo",
+    "description": "all flavoured combo.",
+    "image": "/images/jarcake7.jpg",
+    "category":"jarcake"
+  },
+   {
+    "name": "jarcake - pineapple and choco",
+    "description": "delisious pine and choco flavoured combo.",
+    "image": "/images/jarcake8.jpg",
+    "category":"jarcake"
+  }
+
+
+
+]
