@@ -1,55 +1,48 @@
 <template>
-  <section class="contact-page">
-    <h2>Contact Us</h2>
-    <p class="intro-text">
-      We'd love to hear from you! Whether you have a question, feedback, or custom order — just drop us a message.
-    </p>
+  <div class="contact-page">
+    <h2>Contact Us 📬</h2>
+    <p class="intro">We’d love to hear from you! Send us a message below and we'll get back to you soon.</p>
 
-    <form @submit.prevent="handleSubmit">
+    <form @submit.prevent="submitForm" class="contact-form">
       <div class="form-group">
-        <label for="name">Name</label>
-        <input v-model="form.name" type="text" id="name" required />
+        <label>Name</label>
+        <input v-model="form.name" type="text" required />
       </div>
 
       <div class="form-group">
-        <label for="email">Email</label>
-        <input v-model="form.email" type="email" id="email" required />
+        <label>Email</label>
+        <input v-model="form.email" type="email" required />
       </div>
 
       <div class="form-group">
-        <label for="message">Message</label>
-        <textarea v-model="form.message" id="message" rows="5" required></textarea>
+        <label>Message</label>
+        <textarea v-model="form.message" required></textarea>
       </div>
 
-      <button type="submit">Send Message</button>
+      <button type="submit">Send Message 💌</button>
     </form>
-
-    <p v-if="submitted" class="thanks-message">🎉 Thank you! We'll get back to you soon.</p>
-  </section>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "ContactPage",
+  name: 'ContactPage',
   data() {
     return {
       form: {
-        name: "",
-        email: "",
-        message: ""
-      },
-      submitted: false
+        name: '',
+        email: '',
+        message: ''
+      }
     };
   },
   methods: {
-    handleSubmit() {
-      console.log("Form submitted:", this.form);
-      this.submitted = true;
-
-
-      this.form.name = "";
-      this.form.email = "";
-      this.form.message = "";
+    submitForm() {
+      alert(`Thank you, ${this.form.name}! Your message has been sent.`);
+      // Clear the form
+      this.form.name = '';
+      this.form.email = '';
+      this.form.message = '';
     }
   }
 };
@@ -57,78 +50,78 @@ export default {
 
 <style scoped>
 .contact-page {
-  background-color: #fff4f8;
   padding: 40px 20px;
-  max-width: 600px;
-  margin: 0 auto;
+  background-color: #fff0f5;
   font-family: 'Segoe UI', sans-serif;
-  color: #b85c38;
+  color: #c71585;
+  min-height: 100vh;
 }
 
 h2 {
   text-align: center;
-  font-size: 32px;
-  color: #d63384;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
-.intro-text {
+.intro {
   text-align: center;
-  font-size: 16px;
   margin-bottom: 30px;
+  font-size: 16px;
   color: #7b4a3b;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff0f6;
+  padding: 25px;
+  border: 2px solid #ffc0cb;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(255, 182, 193, 0.3);
 }
 
-.form-group label {
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
   display: block;
   margin-bottom: 6px;
-  font-weight: 500;
-  color: #b85c38;
+  font-weight: bold;
+  color: #b03060;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 10px 14px;
-  border: 1px solid #ffc0cb;
-  border-radius: 8px;
-  background-color: #fff0f6;
-  color: #6e3255;
+  padding: 10px;
+  border: 1px solid #f8cdd9;
+  border-radius: 6px;
   font-size: 14px;
-  outline: none;
+  background: #fff;
+  color: #c71585;
 }
 
-input:focus,
-textarea:focus {
-  border-color: #d63384;
-  box-shadow: 0 0 5px #fcbecb;
+textarea {
+  min-height: 100px;
+  resize: vertical;
 }
 
 button {
-  background-color: #d63384;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #ff69b4;
   color: white;
   border: none;
-  padding: 12px;
   border-radius: 25px;
+  font-weight: bold;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-  background-color: #b2286e;
-}
-
-.thanks-message {
-  text-align: center;
-  margin-top: 20px;
-  color: #a14c65;
-  font-style: italic;
+  background: #d63384;
 }
 </style>
